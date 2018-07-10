@@ -2,7 +2,7 @@ class ArtistsController < ApplicationController
   def index
     @artists = Artist.all
     if Preference.find_by(artist_sort_order: "ASC")
-
+      @artists.sort
     elsif Preference.find_by(artist_sort_order: "DESC")
 
     end
