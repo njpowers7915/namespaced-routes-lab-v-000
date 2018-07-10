@@ -1,5 +1,6 @@
 class ArtistsController < ApplicationController
   def index
+    binding.pry
     @artists = Artist.all
     #if Preference.find_by(artist_sort_order: "ASC")
     #  @artists.sort
