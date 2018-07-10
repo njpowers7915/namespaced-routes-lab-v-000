@@ -4,6 +4,8 @@ class ArtistsController < ApplicationController
     if Preference.find_by(artist_sort_order: "ASC")
 
     elsif Preference.find_by(artist_sort_order: "DESC")
+
+    end
   end
 
   def show
